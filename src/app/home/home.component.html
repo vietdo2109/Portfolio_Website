@@ -1,0 +1,79 @@
+<div [className]="'container'">
+  <!-- author's info -->
+  <div [className]="'container__authorsInfo'">
+    <div [className]="'container__about'">
+      <p [className]="'title'">ABOUT</p>
+      <p [className]="'content__about'">
+        Viets (He/Him) builds web applications. He thrives in complex, dynamic
+        problem spaces focused on scalable architectures, interactive
+        experiences, and seamless user interactions. He studied Information
+        Technology↗ at Hanoi University↗, an experience he values deeply and
+        continues to draw inspiration from. If you have an exciting project or
+        idea, please get in touch↗.
+      </p>
+    </div>
+    <div [className]="'container__team'">
+      <p [className]="'title'">TEAM</p>
+    </div>
+    <div [className]="'container__desc'">
+      <p [className]="'title'">DESCRIPTION</p>
+      <p></p>
+    </div>
+  </div>
+
+  <!-- projects -->
+  <div [className]="'container__projects'">
+    <div [className]="'column'">
+      <app-rectangle-card
+        [bgColor]="'white'"
+        [title]="'ANIME.COM'"
+        [desc]="'PRODUCT'"
+      ></app-rectangle-card>
+      <app-rectangle-card
+        [bgColor]="'red'"
+        [title]="'AZUKI'"
+        [desc]="'CONSUMER PRODUCT'"
+      ></app-rectangle-card>
+      <app-rectangle-card
+        [bgColor]="'white'"
+        [title]="'SKIFF'"
+        [desc]="'PRODUCTIVITY'"
+      ></app-rectangle-card>
+    </div>
+    <div [className]="'column'">
+      <app-rectangle-card
+        [bgColor]="'blue'"
+        [title]="'PLANE'"
+        [desc]="'PRODUCTIVITY'"
+      ></app-rectangle-card>
+      <app-rectangle-card
+        [bgColor]="'white'"
+        [title]="'SKIFF PAGES'"
+        [desc]="'EDITOR TOOL'"
+      ></app-rectangle-card>
+      <app-rectangle-card
+        [bgColor]="'gray'"
+        [title]="'CURSOR'"
+        [desc]="'AI TOOLING'"
+      ></app-rectangle-card>
+    </div>
+    <div [className]="'column'">
+      <app-rectangle-card
+        [bgColor]="'white'"
+        [title]="'BRAIN TECHNOLOGY'"
+        [desc]="'CONVERSATIONAL AI'"
+      ></app-rectangle-card>
+
+      <app-rectangle-card
+        [bgColor]="'gray'"
+        [title]="'PIXEL PUSH'"
+        [desc]="'MULTILAYER ART'"
+      ></app-rectangle-card>
+      <app-rectangle-card
+        [bgColor]="'white'"
+        [title]="'SKIFF ICONS'"
+        [desc]="'BRANDING & SYSTEMS'"
+      ></app-rectangle-card>
+    </div>
+  </div>
+</div>

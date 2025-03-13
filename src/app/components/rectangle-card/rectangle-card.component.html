@@ -1,0 +1,13 @@
+<div
+  [className]="'container'"
+  (mouseover)="handleMouseOver()"
+  (mouseleave)="handleMouseLeave()"
+>
+  <div [className]="'container__image--' + bgColor()">
+    <div [className]="isMouseOver() ? 'project--mouseOver' : ''"></div>
+  </div>
+  <div [className]="'container__desc'">
+    <p [className]="'title'">{{ title() }}</p>
+    <p [className]="'desc'">{{ desc() }}</p>
+  </div>
+</div>
