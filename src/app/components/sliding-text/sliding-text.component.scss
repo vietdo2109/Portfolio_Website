@@ -1,0 +1,22 @@
+.slidetext-container {
+  justify-self: flex-end;
+  align-self: flex-end;
+  width: 100%;
+  overflow: hidden; /* Hides overflowing text */
+  white-space: nowrap;
+  :hover {
+    color: #fdc047;
+  }
+}
+
+.sliding-text {
+  font-weight: 600;
+  margin: 0;
+  color: #616161;
+  font-family: monospace;
+  display: inline-block;
+  white-space: nowrap;
+  :hover {
+    color: #fdc047;
+  }
+}
