@@ -2,6 +2,7 @@
   [className]="'container'"
   (mouseover)="handleMouseOver()"
   (mouseleave)="handleMouseLeave()"
+  routerLink="{{ link() }}"
 >
   <div [className]="'container__image--' + bgColor()">
     <div [className]="isMouseOver() ? 'project--mouseOver' : ''"></div>

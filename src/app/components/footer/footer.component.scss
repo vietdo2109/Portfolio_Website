@@ -1,0 +1,90 @@
+.footer-container {
+  position: fixed;
+  height: 190px;
+  background: #1c1c1c;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.information-container {
+  padding: 32px 32px 40px 32px;
+  display: flex;
+  gap: 12px;
+}
+
+.information-container > div {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  flex: 1;
+}
+
+p {
+  margin: 0;
+}
+
+.sc01 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sc01 > div {
+  font-family: "Offbit Bold";
+  color: #3f3e3e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.version-container {
+  border-radius: 20px;
+  padding: 8px 6px 6px 6px;
+  width: 60px;
+  border: 1px solid #fde047;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fde047;
+  font-family: "Offbit Bold";
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.social-container {
+  margin-left: 50%;
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+a {
+  color: white;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+
+sup {
+  color: #fde047;
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+a:hover {
+  color: #fde047;
+  background: #ffd5002a;
+}
+
+.mail {
+  margin-bottom: 6px;
+}
+
+.slidetext-container {
+}
