@@ -42,6 +42,9 @@ import { RouterLink } from '@angular/router';
         }
         &__authorName {
           cursor: pointer;
+          :hover {
+            color: #fde047;
+          }
         }
       }
       p {

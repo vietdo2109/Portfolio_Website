@@ -51,3 +51,20 @@
   flex-direction: column;
   gap: 30px;
 }
+
+a {
+  color: white;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+
+sup {
+  color: #fde047;
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+a:hover {
+  color: #fde047;
+  background: #ffd5002a;
+}
