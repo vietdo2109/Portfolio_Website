@@ -1,11 +1,14 @@
 import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [RouterLink],
   template: `
     <div [className]="'header'">
-      <div [className]="'container__authorName'"><p>Viet Do Van</p></div>
+      <div [className]="'container__authorName'" routerLink="">
+        <p>Viet Do Van</p>
+      </div>
       <div [className]="'container__roll'">
         <div [className]="'container__rollInner'">
           <p>Web Developer</p>
@@ -19,10 +22,11 @@ import { Component, signal } from '@angular/core';
   styles: [
     `
       .header {
+        z-index: 1000;
         margin: 0px 12px;
         font-family: 'Open Sans', sans-serif;
         position: sticky;
-        top: 0;
+        top: 0px;
         display: flex;
         color: white;
         background-color: #111111;
@@ -35,6 +39,9 @@ import { Component, signal } from '@angular/core';
         &__roll {
           flex: 1;
           padding: 16px 0;
+        }
+        &__authorName {
+          cursor: pointer;
         }
       }
       p {
