@@ -1,0 +1,22 @@
+div {
+  padding: 16px;
+  background-color: #1b1b1b;
+  border-radius: 8px;
+  :hover {
+    color: rgba(255, 255, 255, 0.749);
+  }
+}
+
+p {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  color: #6b6b6b;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+a {
+  width: 100%;
+  color: #4b4a4a;
+  text-decoration: none;
+}

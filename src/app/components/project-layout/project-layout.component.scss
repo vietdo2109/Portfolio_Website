@@ -1,9 +1,23 @@
+.container {
+  background-color: #111111;
+  width: 100%;
+  display: flex;
+  padding-bottom: 40px;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
 .pname-container {
   width: 33%;
   margin-top: 30px;
   background: #111111;
   position: sticky;
   top: 80px;
+  max-height: 80px;
 }
 
 .titleContainer {
@@ -25,4 +39,5 @@ h1 {
 
 p {
   margin: 0;
+  font-size: 12px;
 }

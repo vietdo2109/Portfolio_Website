@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectNameComponent } from './project-name.component';
+import { GrayTextComponent } from './gray-text.component';
 
-describe('ProjectNameComponent', () => {
-  let component: ProjectNameComponent;
-  let fixture: ComponentFixture<ProjectNameComponent>;
+describe('GrayTextComponent', () => {
+  let component: GrayTextComponent;
+  let fixture: ComponentFixture<GrayTextComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProjectNameComponent]
+      imports: [GrayTextComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProjectNameComponent);
+    fixture = TestBed.createComponent(GrayTextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
