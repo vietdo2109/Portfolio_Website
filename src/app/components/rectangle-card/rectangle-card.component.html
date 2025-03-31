@@ -4,11 +4,19 @@
   (mouseleave)="handleMouseLeave()"
   routerLink="{{ link() }}"
 >
-  <div [className]="'container__image--' + bgColor()">
-    <div [className]="isMouseOver() ? 'project--mouseOver' : ''"></div>
+  <div [className]="isMouseOver() ? 'project--mouseOver' : ''">
+    <img
+      [className]="'container__image--' + bgColor()"
+      src="{{ imgSrc() }}"
+      alt="introduce image"
+    />
   </div>
+
   <div [className]="'container__desc'">
     <p [className]="'title'">{{ title() }}</p>
     <p [className]="'desc'">{{ desc() }}</p>
+  </div>
+  <div [className]="'locked-tag'" *ngIf="isLocked()">
+    <p>LOCKED</p>
   </div>
 </div>
