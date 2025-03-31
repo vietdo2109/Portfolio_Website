@@ -1,0 +1,14 @@
+<!-- <img src="assets/images/brainImage.jpg" alt="img" /> -->
+<img src="{{ heroImg() }}" alt="img" />
+
+<div [className]="'container'">
+  <div [className]="'pname-container'">
+    <div [className]="'titleContainer'">
+      <h1>{{ title() }}</h1>
+    </div>
+    <div [className]="'subTitleContainer'">
+      <p>{{ subTitle() }}</p>
+    </div>
+  </div>
+  <ng-content />
+</div>

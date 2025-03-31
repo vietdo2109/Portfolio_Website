@@ -1,9 +1,79 @@
-<img src="assets/images/brainImage.jpg" alt="img" />
+<app-project-layout
+  [heroImg]="'assets/images/brainImage.jpg'"
+  [title]="'BRAIN TECHNOLOGY'"
+  [subTitle]="'MULTIMODAL INTERACTION'"
+>
+  <div [className]="'presentation-container'">
+    <div [className]="'introduce-section'">
+      <div [className]="'introduce-p'">
+        <app-white-text [fontSize]="'14px'" [fontWeight]="'700'"
+          >For 2 years, I prototyped new ways to engage with computer
+          interfaces, mostly working with voice and AI. Brain was one of the
+          first companies to explore the idea of multimodal, generative
+          interfaces. My time working with the team has shaped many of the
+          principles I design with now. Most of my work stayed in R&D but pieces
+          of it have shipped and are now in the app store↗ .</app-white-text
+        >
+      </div>
+      <div [className]="'details-p'">
+        <div [className]="'detail'">
+          <app-gray-text>ROLE</app-gray-text>
+          <app-white-text>dsfadfadfasd</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>COLLABORATORS</app-gray-text>
+          <app-white-text>dsfadfadfasd</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>DURATION</app-gray-text>
+          <app-white-text>dsfadfadfasd</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>TOOLS</app-gray-text>
+          <app-white-text>dsfadfadfasd</app-white-text>
+        </div>
+      </div>
+      <div [className]="'buttons-container'">
+        <app-navigate-button [text]="'visit website'" />
+        <app-navigate-button [text]="'visit website'" />
+      </div>
+      <div [className]="'main-content-container'">
+        <app-presentation-image />
+        <div [className]="'desc-container'">
+          <app-white-text>
+            Multimodal search with the ability to give follow-up queries
+          </app-white-text>
+        </div>
+        <app-presentation-image />
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Led designs for an experimental feature, Meet up, where users can
+            find restaurants and make reservations based on location and
+            preference. The app leverages user location data to find top Yelp
+            rated restaurants geographically close to both
+            users.</app-white-text
+          >
+        </div>
 
-<div [className]="'container'">
-  <app-project-name
-    [title]="'BRAIN TEACHNOLOGY'"
-    [subTitle]="'MULTIMODAL INTERACTION'"
-  ></app-project-name>
-  <div></div>
-</div>
+        <app-presentation-image />
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Led designs for an experimental feature, Meet up, where users can
+            find restaurants and make reservations based on location and
+            preference. The app leverages user location data to find top Yelp
+            rated restaurants geographically close to both
+            users.</app-white-text
+          >
+        </div>
+
+        <app-presentation-image />
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Prototyped intelligent restaurant suggestions based on user
+            preference and order history.
+          </app-white-text>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-project-layout>
