@@ -1,5 +1,5 @@
 <div
-  [className]="'container'"
+  [className]="'container--' + transitionDura()"
   (mouseover)="handleMouseOver()"
   (mouseleave)="handleMouseLeave()"
   routerLink="{{ link() }}"
