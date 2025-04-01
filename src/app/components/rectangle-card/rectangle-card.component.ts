@@ -14,6 +14,7 @@ export class RectangleCardComponent {
   title = input();
   desc = input();
   link = input();
+  transitionDura = input();
   isLocked = input(false);
   isMouseOver = signal<boolean>(false);
 

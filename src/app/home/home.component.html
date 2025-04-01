@@ -26,6 +26,7 @@
   <div [className]="'container__projects'">
     <div [className]="'column'">
       <app-rectangle-card
+        [transitionDura]="500"
         [link]="'nextjsdashboard'"
         [imgSrc]="'assets/images/ID.png'"
         [title]="'INTERN DASHBOARD 01'"
@@ -33,12 +34,14 @@
       ></app-rectangle-card>
 
       <app-rectangle-card
+        [transitionDura]="1000"
         [isLocked]="true"
         [imgSrc]="'assets/images/CS.png'"
         [title]="'HELP ME FILL THIS SLOT'"
         [desc]="'CONTACT ME'"
       ></app-rectangle-card
       ><app-rectangle-card
+        [transitionDura]="500"
         [isLocked]="true"
         [imgSrc]="'assets/images/CS.png'"
         [title]="'HELP ME FILL THIS SLOT'"
@@ -47,12 +50,14 @@
     </div>
     <div [className]="'column'">
       <app-rectangle-card
+        [transitionDura]="1000"
         [isLocked]="true"
         [imgSrc]="'assets/images/Chat.png'"
         [title]="'FRIENDS CHAT'"
         [desc]="'ANGULAR CHAT APP'"
       ></app-rectangle-card>
       <app-rectangle-card
+        [transitionDura]="500"
         [imgSrc]="'assets/images/BC square.png'"
         [title]="'BATTLE CITY'"
         [desc]="'JAVA GAME'"
@@ -60,12 +65,14 @@
     </div>
     <div [className]="'column'">
       <app-rectangle-card
+        [transitionDura]="500"
         [imgSrc]="'assets/images/DS.png'"
         [title]="'DEVLIFE SIM'"
         [desc]="'REACT NATIVE GAME'"
       ></app-rectangle-card>
 
       <app-rectangle-card
+        [transitionDura]="1000"
         [imgSrc]="'assets/images/ET.png'"
         [title]="'EXPENSE TRACKER'"
         [desc]="'REACT NATIVE APPICATION'"
@@ -73,6 +80,7 @@
       ></app-rectangle-card>
       <app-rectangle-card
         [isLocked]="true"
+        [transitionDura]="1000"
         [imgSrc]="'assets/images/CS.png'"
         [title]="'HELP ME FILL THIS SLOT'"
         [desc]="'CONTACT ME'"
