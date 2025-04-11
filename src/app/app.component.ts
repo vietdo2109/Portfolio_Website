@@ -33,6 +33,10 @@ import { FooterComponent } from './components/footer/footer.component';
         border-bottom: 1px solid rgb(36, 36, 36);
         box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
           0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+        @media (max-width: 770px) {
+          margin-bottom: 290px;
+        }
       }
     `,
   ],
