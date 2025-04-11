@@ -46,6 +46,19 @@ import { RouterLink } from '@angular/router';
             color: #fde047;
           }
         }
+        &__roll {
+          flex: 2;
+          @media (min-width: 770px) {
+            flex: 1;
+          }
+        }
+        &__location {
+          display: none;
+
+          @media (min-width: 770px) {
+            display: block;
+          }
+        }
       }
       p {
         color: white;

@@ -1,6 +1,6 @@
 .footer-container {
   position: fixed;
-  height: 190px;
+  min-height: 190px;
   background: #1c1c1c;
   width: 100%;
   bottom: 0;
@@ -16,6 +16,11 @@
   display: flex;
   gap: 12px;
   flex: 1;
+
+  @media (max-width: 770px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .information-container > div {
@@ -65,6 +70,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  @media (max-width: 770px) {
+    margin-left: 0px;
+  }
 }
 
 a {
