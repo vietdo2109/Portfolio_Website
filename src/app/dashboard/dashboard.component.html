@@ -1,78 +1,146 @@
 <app-project-layout
-  [heroImg]="'assets/images/brainImage.jpg'"
-  [title]="'BRAIN TECHNOLOGY'"
-  [subTitle]="'MULTIMODAL INTERACTION'"
+  [heroImg]="'assets/images/ID.png'"
+  [title]="'EVERYTHING-I-NEED DASHBOARD'"
+  [subTitle]="'NEXTJS DASHBOARD'"
 >
   <div [className]="'presentation-container'">
     <div [className]="'introduce-section'">
       <div [className]="'introduce-p'">
         <app-white-text [fontSize]="'14px'" [fontWeight]="'700'"
-          >For 2 years, I prototyped new ways to engage with computer
-          interfaces, mostly working with voice and AI. Brain was one of the
-          first companies to explore the idea of multimodal, generative
-          interfaces. My time working with the team has shaped many of the
-          principles I design with now. Most of my work stayed in R&D but pieces
-          of it have shipped and are now in the app store↗ .</app-white-text
+          >During my first part-time front-end internship at React Plus, I
+          developed a comprehensive productivity dashboard inspired by the
+          <span class="site"
+            ><a
+              target="_blank"
+              href="https://www.figma.com/community/file/1020707462188017225/purity-ui-dashboard-chakra-ui-dashboard"
+              >Figma design of Purity UI Dashboard↗</a
+            ></span
+          >. This personal project served as a sandbox to explore and implement
+          features I found useful for work while practicing new technologies. I
+          gained valuable experience integrating full-stack features such as
+          authentication, CRUD operations, and interactive tools like a Pomodoro
+          clock, quiz system, and AI chatbot using Google’s Gemini model via
+          Vercel AI SDK. I also worked with schema validation libraries (Yup,
+          Joi, Zod), React Hook Form, and optimized data fetching with React
+          Query. This project gave me deeper understanding of building
+          real-world dashboards, managing app data with RESTful APIs, and
+          enhancing user experience through responsive UI using Chakra UI and
+          Next.js.</app-white-text
         >
       </div>
       <div [className]="'details-p'">
         <div [className]="'detail'">
           <app-gray-text>ROLE</app-gray-text>
-          <app-white-text>dsfadfadfasd</app-white-text>
+          <app-white-text>Developer</app-white-text>
         </div>
         <div [className]="'detail'">
           <app-gray-text>COLLABORATORS</app-gray-text>
-          <app-white-text>dsfadfadfasd</app-white-text>
+          <app-white-text>Viet</app-white-text>
         </div>
         <div [className]="'detail'">
           <app-gray-text>DURATION</app-gray-text>
-          <app-white-text>dsfadfadfasd</app-white-text>
+          <app-white-text>4 months</app-white-text>
         </div>
         <div [className]="'detail'">
           <app-gray-text>TOOLS</app-gray-text>
-          <app-white-text>dsfadfadfasd</app-white-text>
+          <app-white-text
+            >Next.js, React Hook Form, React Query, PostgreSQL, Restful
+            APIs,...</app-white-text
+          >
         </div>
       </div>
       <div [className]="'buttons-container'">
-        <app-navigate-button [text]="'visit website'" />
-        <app-navigate-button [text]="'visit website'" />
+        <app-navigate-button
+          [text]="'visit website'"
+          [link]="'https://intern-01-nextjs.vercel.app'"
+        />
+        <app-navigate-button
+          [text]="'github'"
+          [link]="'https://github.com/vietdo2109/intern_01_nextjs'"
+        />
       </div>
       <div [className]="'main-content-container'">
-        <app-presentation-image />
         <div [className]="'desc-container'">
-          <app-white-text>
-            Multimodal search with the ability to give follow-up queries
+          <app-white-text
+            >Login page, user can login with email & password or regster new
+            account in register page.
+            <app-presentation-image imgSrc="assets\ID\Login.png" />
           </app-white-text>
         </div>
-        <app-presentation-image />
         <div [className]="'desc-container'">
           <app-white-text
-            >Led designs for an experimental feature, Meet up, where users can
-            find restaurants and make reservations based on location and
-            preference. The app leverages user location data to find top Yelp
-            rated restaurants geographically close to both
-            users.</app-white-text
-          >
-        </div>
-
-        <app-presentation-image />
-        <div [className]="'desc-container'">
-          <app-white-text
-            >Led designs for an experimental feature, Meet up, where users can
-            find restaurants and make reservations based on location and
-            preference. The app leverages user location data to find top Yelp
-            rated restaurants geographically close to both
-            users.</app-white-text
-          >
-        </div>
-
-        <app-presentation-image />
-        <div [className]="'desc-container'">
-          <app-white-text
-            >Prototyped intelligent restaurant suggestions based on user
-            preference and order history.
+            >After logging in, users can access various pre-designed pages such
+            as /dashboard, /tables, and /billing, along with several
+            custom-built features tailored for personal productivity and
+            learning. I built out CRUD functionality via RESTful APIs to manage
+            dynamic content—especially in the Authors Table, Todo List, Chatbot,
+            and Quiz modules.
           </app-white-text>
+          <app-presentation-image imgSrc="assets\ID\Dashboard.png" />
+          <app-presentation-image imgSrc="assets\ID\Table.png" />
+          <app-presentation-image imgSrc="assets\ID\Author.png" />
+          <app-presentation-image imgSrc="assets\ID\Author_See_Image.png" />
+          <app-presentation-image imgSrc="assets\ID\Billing.png" />
         </div>
+
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Todo-list - the sacred rite of passage for every React newbie 😅 —
+            of course I built one! This was actually the first custom feature I
+            added to the dashboard.</app-white-text
+          >
+          <app-presentation-image imgSrc="assets\ID\Todo.png" />
+          <app-presentation-image imgSrc="assets\ID\Todo_Add.png" />
+          <app-presentation-image imgSrc="assets\ID\Todo_Update.png" />
+        </div>
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Pomodoro clock - Productivity? Boosted. (Or at least it feels that
+            way.) I added a Pomodoro timer so I could pretend to work harder
+            while watching the clock tick like a boss. 🍅</app-white-text
+          >
+          <app-presentation-image imgSrc="assets\ID\Pomodoro.png" />
+          <app-presentation-image imgSrc="assets\ID\Pomodoro_1.png" />
+          <app-presentation-image imgSrc="assets\ID\Pomodoro_2.png" />
+          <app-presentation-image imgSrc="assets\ID\Pomodoro_Settings.png" />
+        </div>
+
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Mini quizlet - This one… yeah, I really gave it my all 😅. It's a
+            work-in-progress and still a bit buggy — but hey, learning by
+            building a learning app is very meta.</app-white-text
+          >
+          <app-presentation-image imgSrc="assets\ID\Quiz.png" />
+        </div>
+
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Shiba Chatbot - Definitely the most fun feature! I integrated an AI
+            chatbot using Gemini 2.0 via Vercel’s AI SDK — basically made my
+            dashboard talk back to me. Still waiting for it to roast me, though.
+          </app-white-text>
+          <app-presentation-image
+            imgSrc="assets\ID\Chat.png"
+          /><app-presentation-image imgSrc="assets\ID\Chatslot.png" />
+
+          <app-presentation-image imgSrc="assets\ID\Search_ChatSlot.png" />
+        </div>
+
+        <app-white-text
+          >First project as a newbie intern — please forgive the bugs
+          🙈</app-white-text
+        >
+
+        <app-white-text
+          >Please
+          <span class="site"
+            ><a href="https://intern-01-nextjs.vercel.app" target="_blank">
+              visit the website</a
+            ></span
+          >
+          to experience the full range of features 🧐🧐🧐.</app-white-text
+        >
       </div>
     </div>
   </div>

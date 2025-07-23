@@ -1,0 +1,43 @@
+<app-project-layout
+  [heroImg]="'assets/images/ET.png'"
+  [title]="'EXPENSE TRACKER'"
+  [subTitle]="'REACT NATIVE APPLICATION'"
+>
+  <div [className]="'presentation-container'">
+    <div [className]="'introduce-section'">
+      <div [className]="'introduce-p'">
+        <app-white-text [fontSize]="'14px'" [fontWeight]="'700'"
+          >For a small assignment in my Mobile Development course, I built a
+          simple expense tracker app using React Native. This project gave me a
+          solid introduction to mobile development, helping me understand the
+          fundamentals of building cross-platform UIs, managing state, and
+          handling basic user input on mobile devices.</app-white-text
+        >
+      </div>
+      <div [className]="'details-p'">
+        <div [className]="'detail'">
+          <app-gray-text>ROLE</app-gray-text>
+          <app-white-text>Developer</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>COLLABORATORS</app-gray-text>
+          <app-white-text>Viet</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>DURATION</app-gray-text>
+          <app-white-text>1 week</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>TOOLS</app-gray-text>
+          <app-white-text>React Native</app-white-text>
+        </div>
+      </div>
+      <div [className]="'buttons-container'">
+        <app-navigate-button
+          [text]="'Github'"
+          [link]="'https://github.com/pencilknight00/expense_tracker_app'"
+        />
+      </div>
+    </div>
+  </div>
+</app-project-layout>
