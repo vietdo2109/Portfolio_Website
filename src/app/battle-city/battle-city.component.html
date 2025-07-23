@@ -1,0 +1,47 @@
+<app-project-layout
+  [heroImg]="'assets/images/BC.png'"
+  [title]="'BATTLE CITY'"
+  [subTitle]="'JAVA GAME'"
+>
+  <div [className]="'presentation-container'">
+    <div [className]="'introduce-section'">
+      <div [className]="'introduce-p'">
+        <app-white-text [fontSize]="'14px'" [fontWeight]="'700'"
+          >As part of a 1-month university assignment, I led a team of three to
+          recreate the classic Battle City game in Java. In addition to managing
+          the project workflow and sourcing key assets (tanks, walls, game UI),
+          I also contributed heavily as one of the main developers, handling
+          core gameplay logic and system setup. This project helped sharpen my
+          skills in Java, teamwork, and game development
+          fundamentals.</app-white-text
+        >
+      </div>
+      <div [className]="'details-p'">
+        <div [className]="'detail'">
+          <app-gray-text>ROLE</app-gray-text>
+          <app-white-text>Developer, Leader</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>COLLABORATORS</app-gray-text>
+          <app-white-text>Viet + 2 friends</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>DURATION</app-gray-text>
+          <app-white-text>1 month</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>TOOLS</app-gray-text>
+          <app-white-text>Java</app-white-text>
+        </div>
+      </div>
+      <div [className]="'buttons-container'">
+        <app-navigate-button
+          [text]="'Github'"
+          [link]="
+            'https://github.com/vietanhnguyen2401/JSD_Assignment_BattleCity_2024'
+          "
+        />
+      </div>
+    </div>
+  </div>
+</app-project-layout>

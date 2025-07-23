@@ -60,6 +60,15 @@ app-navigate-button {
 }
 
 .desc-container {
-  width: 86%;
+  width: 100%;
   margin-bottom: 16px;
+}
+.site > a {
+  color: white;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+.site > a:hover {
+  color: #fde047;
+  background: #ffd5002a;
 }

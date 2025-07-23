@@ -4,19 +4,20 @@
     <div [className]="'container__about'">
       <p [className]="'title'">ABOUT</p>
       <p [className]="'content'">
-        Viet (He/Him) builds web applications. He thrives in complex, dynamic
-        problem spaces focused on scalable architectures, interactive
-        experiences, and seamless user interactions. He studied Information
-        Technology at Hanoi University, an experience he values deeply and
-        continues to draw inspiration from. If you have an exciting project or
-        idea, please <a href="mailto:dovanviet2109@gmail.com">get in touch</a
+        Hello ✌️ I’m Viet — a web developer who enjoys building clean,
+        thoughtful, and user-friendly applications. I’m known for being
+        hardworking, easy to collaborate with, and having a keen eye for
+        aesthetics, especially when it comes to minimalist design. I studied
+        Information Technology at Hanoi University, an experience I value deeply
+        and continues to draw inspiration from. If you have an exciting project
+        or idea, please <a href="mailto:dovanviet2109@gmail.com">get in touch</a
         ><sup>↗</sup>.
       </p>
     </div>
     <div [className]="'container__team-desc'">
       <div [className]="'container__titles'">
         <div [className]="'container__team'">
-          <p [className]="'title'">TEAM</p>
+          <p [className]="'title'">TIMESTAMP</p>
         </div>
         <div [className]="'container__desc'">
           <p [className]="'title'">DESCRIPTION</p>
@@ -25,37 +26,38 @@
       <div [className]="'container__contents'">
         <div [className]="'section_content'">
           <div [className]="'container__team'">
-            <p [className]="'content'">Notion</p>
-            <p [className]="'content'">2025 - Present</p>
+            <p [className]="'content'">FPT IS</p>
+            <p [className]="'content'">Apr 2025 – Jun 2025</p>
           </div>
           <div [className]="'container__desc'">
             <p [className]="'content'">
-              Building beautiful tools for your life’s work.
+              Backend & frontend intern (.NET & Angular). Expanded my technical
+              range and collaborated on enterprise-scale solutions.
             </p>
           </div>
         </div>
         <div [className]="'section_content'">
           <div [className]="'container__team'">
-            <p [className]="'content'">Notion</p>
-            <p [className]="'content'">2025 - Present</p>
+            <p [className]="'content'">React Plus</p>
+            <p [className]="'content'">Sep 2024 – Feb 2025</p>
           </div>
           <div [className]="'container__desc'">
             <p [className]="'content'">
-              First full-time design hire. Scaled design team to 5 people. Built
-              Anime.com, Animee, and interactive experiences for the Azuki IP.
+              First part-time frontend internship. Gained hands-on experience
+              with real-world React workflows and learned how frontend teams
+              operate in production environments.
             </p>
           </div>
         </div>
         <div [className]="'section_content'">
           <div [className]="'container__team'">
-            <p [className]="'content'">Notion</p>
-            <p [className]="'content'">2025 - Present</p>
+            <p [className]="'content'">Hanoi University</p>
+            <p [className]="'content'">2021 - 2025</p>
           </div>
           <div [className]="'container__desc'">
             <p [className]="'content'">
-              Design consulting for emerging AI and productivity companies.
-              Notable clients include Anysphere (Cursor AI)1, Rox2, andBrain
-              Technologies (Natural AI)3.
+              Studied Information & Technology. Built a foundation in software
+              development, algorithms, and web technologies.
             </p>
           </div>
         </div>
@@ -65,59 +67,68 @@
 
   <!-- projects -->
   <div [className]="'container__projects'">
+    <!-- col-1 -->
     <div [className]="'column'">
       <app-rectangle-card
+        [transitionDura]="1000"
+        [link]="'random-webtoon'"
+        [isLocked]="false"
+        [imgSrc]="'assets/images/RW.png'"
+        [title]="'RANDOM WEBTOON'"
+        [desc]="'NEXTJS APPLICATION'"
+      ></app-rectangle-card>
+      <app-rectangle-card
         [transitionDura]="500"
-        [link]="'nextjsdashboard'"
+        [link]="'nextjs-dashboard'"
         [imgSrc]="'assets/images/ID.png'"
         [title]="'INTERN DASHBOARD 01'"
         [desc]="'NEXTJS APPLICATION'"
       ></app-rectangle-card>
 
       <app-rectangle-card
-        [transitionDura]="1000"
-        [isLocked]="true"
-        [imgSrc]="'assets/images/CS.png'"
-        [title]="'HELP ME FILL THIS SLOT'"
-        [desc]="'CONTACT ME'"
-      ></app-rectangle-card
-      ><app-rectangle-card
         [transitionDura]="500"
-        [isLocked]="true"
-        [imgSrc]="'assets/images/CS.png'"
-        [title]="'HELP ME FILL THIS SLOT'"
-        [desc]="'CONTACT ME'"
+        [imgSrc]="'assets/images/DS.png'"
+        [title]="'DEVLIFE SIM'"
+        [desc]="'REACT NATIVE GAME'"
+        [link]="'devlife-sim'"
       ></app-rectangle-card>
     </div>
+
+    <!-- col-2 -->
+
     <div [className]="'column'">
       <app-rectangle-card
+        [transitionDura]="500"
+        [link]="'battle-city'"
+        [imgSrc]="'assets/images/BC square.png'"
+        [title]="'BATTLE CITY'"
+        [desc]="'JAVA GAME'"
+      ></app-rectangle-card
+      ><app-rectangle-card
         [transitionDura]="1000"
         [isLocked]="true"
         [imgSrc]="'assets/images/Chat.png'"
         [title]="'FRIENDS CHAT'"
         [desc]="'ANGULAR CHAT APP'"
       ></app-rectangle-card>
-      <app-rectangle-card
-        [transitionDura]="500"
-        [imgSrc]="'assets/images/BC square.png'"
-        [title]="'BATTLE CITY'"
-        [desc]="'JAVA GAME'"
-      ></app-rectangle-card>
     </div>
+
+    <!-- col-3 -->
+
     <div [className]="'column'">
       <app-rectangle-card
         [transitionDura]="500"
-        [imgSrc]="'assets/images/DS.png'"
-        [title]="'DEVLIFE SIM'"
-        [desc]="'REACT NATIVE GAME'"
+        [link]="'v-homes'"
+        [imgSrc]="'assets/images/VH.png'"
+        [title]="'V HOMES'"
+        [desc]="'NEXTJS REAL ESTATE APPLICATION'"
       ></app-rectangle-card>
-
       <app-rectangle-card
         [transitionDura]="1000"
         [imgSrc]="'assets/images/ET.png'"
         [title]="'EXPENSE TRACKER'"
         [desc]="'REACT NATIVE APPICATION'"
-        [link]="'/nextjsdashboard'"
+        [link]="'/expense-tracker'"
       ></app-rectangle-card>
       <app-rectangle-card
         [isLocked]="true"

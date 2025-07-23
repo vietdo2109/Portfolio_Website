@@ -1,0 +1,74 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.presentation-container {
+  margin-top: 28px;
+  display: flex;
+
+  flex-direction: column;
+  gap: 10px;
+  gap: 8px 0 0 0;
+  flex: 1;
+  opacity: 0; /* Initially invisible */
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.introduce-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.introduce-p {
+  width: 100%;
+}
+
+.details-p {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 12px;
+}
+
+app-navigate-button {
+  flex: 1;
+}
+
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.desc-container {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.site > a {
+  color: white;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+.site > a:hover {
+  color: #fde047;
+  background: #ffd5002a;
+}

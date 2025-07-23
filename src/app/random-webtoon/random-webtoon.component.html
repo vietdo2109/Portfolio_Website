@@ -1,0 +1,129 @@
+<app-project-layout
+  [heroImg]="'assets/images/RW.png'"
+  [title]="'RANDOM WEBTOON'"
+  [subTitle]="'NEXTJS APPLICATION'"
+>
+  <div [className]="'presentation-container'">
+    <div [className]="'introduce-section'">
+      <div [className]="'introduce-p'">
+        <app-white-text [fontSize]="'14px'" [fontWeight]="'700'"
+          >For 1 month, I developed a responsive web application that helps
+          users discover new random webtoons. During this project, I gained
+          hands-on experience integrating Redux Toolkit into a Next.js App
+          Router architecture — learning how to manage client-side state cleanly
+          and efficiently. I also deepened my understanding of responsive
+          design, ensuring the UI adapts well across devices using Tailwind CSS
+          and component libraries like ShadCN.</app-white-text
+        >
+      </div>
+      <div [className]="'details-p'">
+        <div [className]="'detail'">
+          <app-gray-text>ROLE</app-gray-text>
+          <app-white-text>Developer</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>COLLABORATORS</app-gray-text>
+          <app-white-text>Viet</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>DURATION</app-gray-text>
+          <app-white-text>1 month</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>TOOLS</app-gray-text>
+          <app-white-text
+            >Next.js 15, Firebase, TailwindCSS, Shadcn UI, Redux Toolkit,
+            GraphQL</app-white-text
+          >
+        </div>
+      </div>
+      <div [className]="'buttons-container'">
+        <app-navigate-button
+          [text]="'Visit website'"
+          link="https://random-webtoon.vercel.app/"
+        />
+        <app-navigate-button
+          [text]="'Github'"
+          link="https://github.com/vietdo2109/random-webtoon"
+        />
+      </div>
+
+      <div [className]="'main-content-container'">
+        <div [className]="'desc-container'">
+          <app-white-text> Home page user interface. </app-white-text>
+          <app-presentation-image
+            imgSrc="assets/RW/Home_Random_Of_The_Day.png"
+          />
+          <app-presentation-video videoSrc="assets/RW/Home_Carousel.mp4" />
+
+          <app-presentation-image imgSrc="assets/RW/Home_Form.png" />
+        </div>
+        <div [className]="'desc-container'">
+          <app-white-text
+            >User can get a single ranrom webtoon/list of random webtoons, based
+            on their preferences (or not).</app-white-text
+          >
+          <app-presentation-image imgSrc="assets/RW/Generator.png" />
+        </div>
+
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Result of one generating single random webtoon. The route, for
+            example
+            https://random-webtoon.vercel.app/webtoon/119257/omniscient-reader,
+            is randomly and automatically created.
+          </app-white-text>
+          <app-presentation-image imgSrc="assets/RW/Single_Webtoon.png" />
+        </div>
+
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Result of one generating a list random webtoons, displayed by a
+            carousel.</app-white-text
+          >
+          <app-presentation-image imgSrc="assets/RW/Random_List.png" />
+        </div>
+
+        <div [className]="'desc-container'">
+          <app-white-text
+            >User can search for a particular webtoon by the
+            title.</app-white-text
+          >
+          <app-presentation-video videoSrc="assets/RW/Search_Webtoon.mp4" />
+        </div>
+
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Logged-in user can add webtoon to their favorites, displayed in
+            my-series tab.</app-white-text
+          >
+          <app-presentation-image imgSrc="assets/RW/My_Series.png" />
+        </div>
+
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Intercepting login route for anonymous user.</app-white-text
+          >
+          <app-presentation-image imgSrc="assets/RW/Intercepting_Route.png" />
+        </div>
+
+        <div [className]="'desc-container'">
+          <app-white-text
+            >Responsive layout for smaller screen devices.</app-white-text
+          >
+          <app-presentation-image imgSrc="assets/RW/Responsive.png" />
+        </div>
+
+        <app-white-text
+          >Please
+          <span class="site"
+            ><a href="https://random-webtoon.vercel.app/" target="_blank">
+              visit the website</a
+            ></span
+          >
+          to experience the full range of features 🧐🧐🧐.</app-white-text
+        >
+      </div>
+    </div>
+  </div>
+</app-project-layout>

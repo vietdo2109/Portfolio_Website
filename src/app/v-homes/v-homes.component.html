@@ -1,0 +1,102 @@
+<app-project-layout
+  [heroImg]="'assets/VH/Hero_Image.png'"
+  [title]="'V HOMES'"
+  [subTitle]="'NEXTJS REAL ESTATE APPLICATION'"
+>
+  <div [className]="'presentation-container'">
+    <div [className]="'introduce-section'">
+      <div [className]="'introduce-p'">
+        <app-white-text [fontSize]="'14px'" [fontWeight]="'700'"
+          >For about 1 month, I developed a full-stack real estate web
+          application using Next.js 15 and Firebase (Firestore, Authentication,
+          Storage). This project gave me practical experience working with user
+          authentication (email/password and Google OAuth), role-based access
+          (user/admin), and secure CRUD operations on a Firestore-backed
+          database. I also implemented advanced features like pagination,
+          markdown-rendered property descriptions, image galleries with cloud
+          storage, and favorites functionality gated behind authentication.
+          Admin users can manage property listings through a protected dashboard
+          with image uploading and reordering support. This project
+          significantly deepened my understanding of TypeScript, Zod for schema
+          validation, and scalable component design in a modern React
+          ecosystem.</app-white-text
+        >
+      </div>
+      <div [className]="'details-p'">
+        <div [className]="'detail'">
+          <app-gray-text>ROLE</app-gray-text>
+          <app-white-text>Developer</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>COLLABORATORS</app-gray-text>
+          <app-white-text>Viet</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>DURATION</app-gray-text>
+          <app-white-text>4 weeks</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>TOOLS</app-gray-text>
+          <app-white-text>Next.js 15, Firebase, TypeScript, Zod</app-white-text>
+        </div>
+      </div>
+      <div [className]="'buttons-container'">
+        <app-navigate-button
+          [text]="'Visit website'"
+          link="https://v-homes.vercel.app/"
+        />
+        <app-navigate-button
+          [text]="'Github'"
+          link="https://github.com/vietdo2109/v-homes"
+        />
+      </div>
+      <div [className]="'desc-container'">
+        <app-white-text
+          >User can login, and register new account using email & password or
+          using Google account.</app-white-text
+        >
+        <app-presentation-image imgSrc="assets\VH\Login.png" />
+      </div>
+      <div [className]="'desc-container'">
+        <app-white-text
+          >Menus for normal user and admin are different. Normal users can have
+          their favorite properties, while only admins are able to manage the
+          properties (add new, delete, edit properties)</app-white-text
+        >
+        <app-presentation-image imgSrc="assets\VH\Admin_Menu.png" />
+        <app-presentation-image imgSrc="assets\VH\Admin_Dashboard.png" />
+        <app-presentation-video videoSrc="assets/VH/Add_Property.mp4" />
+
+        <app-presentation-image imgSrc="assets\VH\Edit_Property.png" />
+      </div>
+
+      <div [className]="'desc-container'">
+        <app-white-text
+          >Users can view the property's details on the property page. The
+          description uploaded by the admin supports markdown formatting,
+          allowing it to be displayed neatly and clearly on this
+          page.</app-white-text
+        >
+        <app-presentation-image imgSrc="assets\VH\View_Property_1.png" />
+        <app-presentation-image imgSrc="assets\VH\View_Property_2.png" />
+      </div>
+
+      <div [className]="'desc-container'">
+        <app-white-text
+          >"My account" page allows users to update their password or delete
+          account (only for normal users).</app-white-text
+        >
+        <app-presentation-image imgSrc="assets\VH\My_Account.png" />
+      </div>
+      <app-white-text
+        >Please
+        <span class="site"
+          ><a href="https://v-homes.vercel.app/" target="_blank">
+            visit the website</a
+          ></span
+        >
+        to experience the full range of features 🧐🧐🧐.</app-white-text
+      >
+    </div>
+  </div>
+</app-project-layout>

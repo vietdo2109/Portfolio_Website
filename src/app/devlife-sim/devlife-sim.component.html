@@ -1,0 +1,40 @@
+<app-project-layout
+  [heroImg]="'assets/images/DS.png'"
+  [title]="'DEVLIFE SIM'"
+  [subTitle]="'REACT NATIVE GAME'"
+>
+  <div [className]="'presentation-container'">
+    <div [className]="'introduce-section'">
+      <div [className]="'introduce-p'">
+        <app-white-text [fontSize]="'14px'" [fontWeight]="'700'"
+          >For the final assignment in my Mobile Development course, I developed
+          a DevLife Simulator mobile game using React Native. The game features
+          basic authentication, data storage with Firebase, and a
+          custom-designed 2D pixel art interface. This project deepened my
+          understanding of mobile app architecture, especially around user flows
+          and data management — and also taught me a valuable lesson about how
+          misusing useEffect can quickly spiral into bugs and performance
+          issues.</app-white-text
+        >
+      </div>
+      <div [className]="'details-p'">
+        <div [className]="'detail'">
+          <app-gray-text>ROLE</app-gray-text>
+          <app-white-text>Developer, Leader</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>COLLABORATORS</app-gray-text>
+          <app-white-text>Viet</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>DURATION</app-gray-text>
+          <app-white-text>2 weeks</app-white-text>
+        </div>
+        <div [className]="'detail'">
+          <app-gray-text>TOOLS</app-gray-text>
+          <app-white-text>Java</app-white-text>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-project-layout>
